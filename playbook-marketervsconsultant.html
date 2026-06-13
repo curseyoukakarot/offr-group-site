@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB4SZKJYZ2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-TB4SZKJYZ2');
+    </script>
+    <script>!function (key) { if (window.reb2b) return; window.reb2b = { loaded: true }; var s = document.createElement("script"); s.async = true; s.src = "https://b2bjsstore.s3.us-west-2.amazonaws.com/b/" + key + "/" + key + ".js.gz"; document.getElementsByTagName("script")[0].parentNode.insertBefore(s, document.getElementsByTagName("script")[0]); }("7N850HQPDYN1");</script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Senior marketer vs. content generalist — a founder-friendly framework, scorecards, and interview prompts for hiring the marketer your business actually needs.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#0B0B12">
+
+    <title>Senior Marketer vs. Content Generalist | Hiring Manager Playbook | Offr Group</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* =========================================================
+           OFFR GROUP — "Velocity" design system  (shared)
+           Playbook article · warm "Sunset Ember" accent
+           ========================================================= */
+
+        :root {
+            --ink: #0B0B12; --ink-2: #111119; --ink-3: #16161F;
+            --paper: #F5F5F0; --paper-2: #FFFFFF;
+            --cobalt: #2E5BFF; --cobalt-600: #1B47EA; --cobalt-300: #7C97FF;
+            --cyan: #36E0E6; --violet: #6D5EF6;
+            --warm-1: #FB7185; --warm-2: #FB923C; --warm-3: #FBBF24;
+            --text: #0B0B12; --text-soft: #3A3A47; --text-muted: #6A6A78;
+            --text-inv: #F3F3EE; --text-inv-soft: rgba(243, 243, 238, .72); --text-inv-muted: rgba(243, 243, 238, .50);
+            --line: rgba(11, 11, 18, .10); --line-soft: rgba(11, 11, 18, .06); --line-inv: rgba(255, 255, 255, .12);
+            --shadow-sm: 0 1px 2px rgba(11, 11, 18, .04), 0 4px 14px -6px rgba(11, 11, 18, .08);
+            --shadow-md: 0 12px 40px -16px rgba(11, 11, 18, .18);
+            --shadow-glow: 0 16px 50px -18px rgba(46, 91, 255, .55);
+            --r-sm: 12px; --r-md: 18px; --r-lg: 26px; --r-xl: 34px;
+            --ease: cubic-bezier(.22, .68, .16, 1); --ease-out: cubic-bezier(.16, 1, .3, 1);
+            --maxw: 1200px; --pad: clamp(20px, 5vw, 40px);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+        body { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; background: var(--paper); color: var(--text); line-height: 1.6; font-size: 17px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; overflow-x: hidden; }
+        ::selection { background: var(--warm-2); color: #fff; }
+        a { color: inherit; text-decoration: none; }
+        img { max-width: 100%; display: block; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; }
+        :focus-visible { outline: 2px solid var(--cobalt); outline-offset: 3px; border-radius: 4px; }
+
+        .wrap { width: 100%; max-width: var(--maxw); margin-inline: auto; padding-inline: var(--pad); }
+        .section { padding-block: clamp(72px, 11vw, 140px); position: relative; }
+
+        .eyebrow { font-family: 'JetBrains Mono', monospace; font-size: .76rem; letter-spacing: .22em; text-transform: uppercase; color: var(--cobalt); display: inline-flex; align-items: center; gap: .7em; font-weight: 500; }
+        .eyebrow::before { content: ""; width: 26px; height: 1px; background: currentColor; opacity: .55; }
+        .accent-grad { background: linear-gradient(105deg, var(--cobalt) 0%, var(--cyan) 70%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .lead { font-size: clamp(1.05rem, 1.7vw, 1.25rem); color: var(--text-soft); line-height: 1.55; }
+
+        /* ---------- buttons ---------- */
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: .6em; padding: .95rem 1.5rem; border-radius: 999px; font-weight: 600; font-size: .98rem; letter-spacing: -0.01em; transition: transform .35s var(--ease), box-shadow .35s var(--ease), background .25s, color .25s, border-color .25s; white-space: nowrap; will-change: transform; }
+        .btn svg { width: 18px; height: 18px; transition: transform .35s var(--ease); }
+        .btn-primary { background: var(--cobalt); color: #fff; box-shadow: var(--shadow-glow); }
+        .btn-primary:hover { background: var(--cobalt-600); transform: translateY(-2px); box-shadow: 0 22px 60px -18px rgba(46, 91, 255, .75); }
+        .btn-primary:hover svg { transform: translateX(3px); }
+        .btn-dark { background: var(--ink); color: var(--text-inv); }
+        .btn-dark:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+        .btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--line); }
+        .btn-ghost:hover { border-color: var(--ink); transform: translateY(-2px); }
+        .on-dark .btn-ghost, .btn-ghost.on-dark { color: var(--text-inv); border-color: var(--line-inv); background: rgba(255, 255, 255, .03); }
+        .on-dark .btn-ghost:hover, .btn-ghost.on-dark:hover { border-color: rgba(255, 255, 255, .4); background: rgba(255, 255, 255, .07); }
+
+        /* =========================================================
+           READING PROGRESS + NAV
+           ========================================================= */
+        .progress { position: fixed; top: 0; left: 0; height: 3px; width: 0%; background: linear-gradient(90deg, var(--warm-1), var(--warm-3)); z-index: 120; transition: width .1s linear; }
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding-top: 18px; transition: padding .4s var(--ease); }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 12px 14px 12px 22px; border-radius: 999px; border: 1px solid transparent; transition: background .4s var(--ease), border-color .4s var(--ease), box-shadow .4s var(--ease), backdrop-filter .4s; }
+        .nav.scrolled { padding-top: 10px; }
+        .nav.scrolled .nav-inner { background: rgba(245, 245, 240, .72); backdrop-filter: blur(18px) saturate(160%); -webkit-backdrop-filter: blur(18px) saturate(160%); border-color: var(--line); box-shadow: var(--shadow-sm); }
+        .brand { display: inline-flex; align-items: center; }
+        .brand img { height: 42px; width: auto; display: block; }
+        .brand .logo-dark { display: none; }
+        .nav.scrolled .brand .logo-light { display: none; }
+        .nav.scrolled .brand .logo-dark { display: block; }
+        body.menu-open .nav .brand .logo-light { display: none; }
+        body.menu-open .nav .brand .logo-dark { display: block; }
+        .footer .brand img { height: 46px; }
+
+        .nav-links { display: flex; align-items: center; gap: 4px; }
+        .nav-links a { font-size: .95rem; font-weight: 500; color: rgba(243, 243, 238, .82); padding: 9px 14px; border-radius: 999px; transition: color .25s var(--ease), background .25s var(--ease); }
+        .nav-links a:hover { color: #fff; background: rgba(255, 255, 255, .12); }
+        .nav.scrolled .nav-links a { color: var(--text-soft); }
+        .nav.scrolled .nav-links a:hover { color: var(--text); background: rgba(11, 11, 18, .05); }
+        .nav-cta { display: flex; align-items: center; gap: 8px; }
+        .nav-cta .btn { padding: .7rem 1.15rem; font-size: .92rem; }
+        .nav .nav-cta .btn { background: #fff; color: var(--ink); box-shadow: none; }
+        .nav .nav-cta .btn:hover { background: #fff; transform: translateY(-2px); box-shadow: 0 14px 34px -12px rgba(0, 0, 0, .55); }
+        .nav.scrolled .nav-cta .btn { background: var(--ink); color: #fff; }
+        .nav.scrolled .nav-cta .btn:hover { background: var(--cobalt); }
+
+        .burger { display: none; width: 44px; height: 44px; border-radius: 12px; align-items: center; justify-content: center; }
+        .burger span { display: block; width: 20px; height: 2px; background: #fff; position: relative; transition: .3s var(--ease); }
+        .burger span::before, .burger span::after { content: ""; position: absolute; left: 0; width: 20px; height: 2px; background: #fff; transition: .3s var(--ease); }
+        .burger span::before { top: -6px; }
+        .burger span::after { top: 6px; }
+        .nav.scrolled .burger span, .nav.scrolled .burger span::before, .nav.scrolled .burger span::after { background: var(--ink); }
+        body.menu-open .burger span { background: transparent; }
+        body.menu-open .burger span::before { top: 0; transform: rotate(45deg); background: var(--ink); }
+        body.menu-open .burger span::after { top: 0; transform: rotate(-45deg); background: var(--ink); }
+
+        .mobile-menu { position: fixed; inset: 0; z-index: 95; background: rgba(245, 245, 240, .975); backdrop-filter: blur(24px) saturate(160%); -webkit-backdrop-filter: blur(24px) saturate(160%); display: flex; flex-direction: column; justify-content: center; gap: 0; padding: 96px var(--pad) calc(var(--pad) + env(safe-area-inset-bottom, 0px)); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: opacity .4s var(--ease), transform .4s var(--ease), visibility .4s; }
+        body.menu-open .mobile-menu { opacity: 1; visibility: visible; transform: none; }
+        .mobile-menu a:not(.btn) { display: flex; align-items: center; justify-content: space-between; font-size: 1.28rem; font-weight: 600; letter-spacing: -0.01em; color: var(--ink); padding: 16px 2px; border-bottom: 1px solid var(--line-soft); transition: color .2s var(--ease), padding-left .25s var(--ease); }
+        .mobile-menu a:not(.btn)::after { content: ""; width: 19px; height: 19px; flex: none; background: center / contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230B0B12' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 18l6-6-6-6'/%3E%3C/svg%3E"); opacity: .22; transition: opacity .25s, transform .25s var(--ease); }
+        .mobile-menu a:not(.btn):hover { color: var(--warm-2); padding-left: 10px; }
+        .mobile-menu a:not(.btn):hover::after { opacity: .55; transform: translateX(3px); }
+        .mobile-menu .btn { margin-top: 30px; width: 100%; font-size: 1rem; }
+
+        /* =========================================================
+           ARTICLE HERO (dark · Sunset Ember)
+           ========================================================= */
+        .hero { position: relative; background: var(--ink); color: var(--text-inv); border-radius: 0 0 var(--r-xl) var(--r-xl); overflow: hidden; padding-top: clamp(140px, 17vh, 190px); padding-bottom: clamp(64px, 8vw, 100px); isolation: isolate; }
+        .aurora { position: absolute; inset: -25%; z-index: -2; filter: blur(80px); opacity: .56; }
+        .aurora i { position: absolute; display: block; border-radius: 50%; mix-blend-mode: screen; will-change: transform; }
+        .aurora .a1 { width: 46vw; height: 46vw; left: 4%; top: 2%; background: var(--warm-1); animation: drift1 22s var(--ease) infinite; }
+        .aurora .a2 { width: 40vw; height: 40vw; right: 2%; top: -6%; background: var(--warm-2); opacity: .82; animation: drift2 26s var(--ease) infinite; }
+        .aurora .a3 { width: 38vw; height: 38vw; left: 32%; bottom: -22%; background: #C026D3; animation: drift3 30s var(--ease) infinite; }
+        @keyframes drift1 { 50% { transform: translate(8%, 10%) scale(1.12); } }
+        @keyframes drift2 { 50% { transform: translate(-9%, 12%) scale(1.08); } }
+        @keyframes drift3 { 50% { transform: translate(6%, -10%) scale(1.15); } }
+        .grid-lines { position: absolute; inset: 0; z-index: -1; pointer-events: none; background-image: linear-gradient(var(--line-inv) 1px, transparent 1px), linear-gradient(90deg, var(--line-inv) 1px, transparent 1px); background-size: 64px 64px; -webkit-mask-image: radial-gradient(120% 90% at 50% 0%, #000 35%, transparent 78%); mask-image: radial-gradient(120% 90% at 50% 0%, #000 35%, transparent 78%); opacity: .5; }
+        .grain { position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: .045; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+        .hero-spot { position: absolute; inset: 0; z-index: -1; pointer-events: none; background: radial-gradient(440px 440px at var(--mx, 50%) var(--my, 32%), rgba(251, 146, 60, .16), transparent 70%); transition: background .2s; }
+
+        .fhero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(36px, 5vw, 64px); align-items: center; }
+        .fhero-content { max-width: 680px; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; font-size: .85rem; font-weight: 500; color: var(--text-inv-soft); margin-bottom: 24px; transition: color .2s, gap .25s var(--ease); }
+        .back-link:hover { color: #fff; gap: 12px; }
+        .back-link svg { width: 16px; height: 16px; }
+        .fhero-content .eyebrow { color: var(--warm-1); }
+        .article-h1 { margin-top: 18px; font-size: clamp(2rem, 4.2vw, 3.3rem); font-weight: 800; line-height: 1.1; letter-spacing: -0.025em; }
+        .article-h1 .accent-grad { background: linear-gradient(105deg, var(--warm-1) 0%, var(--warm-3) 82%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .article-sub { margin-top: 22px; color: var(--text-inv-soft); font-size: clamp(1.02rem, 1.5vw, 1.18rem); line-height: 1.6; max-width: 56ch; }
+        .meta-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+        .meta-chip { display: inline-flex; align-items: center; gap: 7px; font-size: .82rem; font-weight: 500; color: var(--text-inv-soft); padding: 7px 13px; border-radius: 999px; border: 1px solid var(--line-inv); background: rgba(255, 255, 255, .04); }
+        .meta-chip svg { width: 14px; height: 14px; color: var(--warm-2); }
+        .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+
+        .fpanel { background: rgba(255, 255, 255, .045); border: 1px solid var(--line-inv); border-radius: var(--r-lg); padding: clamp(26px, 3vw, 34px); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); position: relative; overflow: hidden; box-shadow: var(--shadow-md); }
+        .fpanel::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(120% 85% at 100% 0%, rgba(244, 63, 94, .22), transparent 55%), radial-gradient(90% 70% at 0% 100%, rgba(251, 146, 60, .14), transparent 55%); }
+        .fpanel > * { position: relative; z-index: 1; }
+        .fpanel-title { font-size: 1.05rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+        .fpanel-title::before { content: ""; width: 8px; height: 8px; border-radius: 50%; flex: none; background: var(--warm-2); box-shadow: 0 0 12px rgba(251, 146, 60, .8); }
+        .fpanel-title + .fpanel-list { margin-bottom: 22px; }
+        .fpanel-list { list-style: none; display: grid; gap: 11px; }
+        .fpanel-list li { display: flex; gap: 12px; align-items: flex-start; font-size: .92rem; color: var(--text-inv-soft); line-height: 1.45; }
+        .fpanel-list .ck { width: 22px; height: 22px; flex: none; border-radius: 6px; background: rgba(251, 146, 60, .16); color: var(--warm-2); display: grid; place-items: center; margin-top: 1px; }
+        .fpanel-list .ck svg { width: 12px; height: 12px; }
+        .fpanel .panel-cta { margin-top: 22px; width: 100%; }
+
+        /* =========================================================
+           ARTICLE BODY
+           ========================================================= */
+        .article-body { padding-block: clamp(60px, 8vw, 110px); }
+        .article-grid { display: grid; grid-template-columns: minmax(0, 1fr) 264px; gap: clamp(40px, 6vw, 84px); align-items: start; }
+        .prose { max-width: 760px; }
+        .prose > p { font-size: 1.07rem; line-height: 1.8; color: var(--text-soft); margin-bottom: 1.1em; }
+        .prose > p:first-child { font-size: 1.22rem; line-height: 1.65; color: var(--text); }
+        .prose h2 { font-size: clamp(1.5rem, 2.6vw, 1.95rem); font-weight: 800; letter-spacing: -0.022em; color: var(--text); line-height: 1.2; margin-top: 2.6em; margin-bottom: .65em; scroll-margin-top: 96px; }
+        .prose h2::before { content: ""; display: block; width: 34px; height: 3px; border-radius: 2px; background: linear-gradient(90deg, var(--warm-1), var(--warm-2)); margin-bottom: .7em; }
+        .prose h3 { font-size: 1.24rem; font-weight: 700; letter-spacing: -0.015em; color: var(--text); margin-top: 1.9em; margin-bottom: .55em; }
+        .prose ul { list-style: none; margin: 0 0 1.15em; padding: 0; display: grid; gap: .55em; }
+        .prose li { position: relative; padding-left: 1.6em; font-size: 1.04rem; line-height: 1.7; color: var(--text-soft); }
+        .prose li::before { content: ""; position: absolute; left: .25em; top: .72em; width: 6px; height: 6px; border-radius: 50%; background: var(--cobalt); }
+        .prose ul ul { margin: .55em 0 .2em; }
+        .prose ul ul li { font-size: .98rem; }
+        .prose ul ul li::before { width: 5px; height: 5px; background: var(--cyan); }
+        .prose strong { color: var(--text); font-weight: 700; }
+        .prose a { color: var(--cobalt); font-weight: 600; border-bottom: 1px solid rgba(46, 91, 255, .35); transition: border-color .2s, color .2s; }
+        .prose a:hover { color: var(--cobalt-600); border-color: var(--cobalt-600); }
+
+        .callout { border-left: 3px solid var(--warm-2); background: #FFF7EC; padding: 18px 22px; border-radius: 0 14px 14px 0; margin: 1.8em 0; font-size: 1.04rem; line-height: 1.65; color: #7A4A07; }
+        .callout strong { color: #5A3600; }
+
+        .prose .endlink { margin-top: 1.6em; }
+        .prose .endlink a { display: inline-flex; align-items: center; gap: 8px; font-size: 1.05rem; border-bottom: none; }
+        .prose .endlink a svg { width: 16px; height: 16px; transition: transform .25s var(--ease); }
+        .prose .endlink a:hover svg { transform: translateX(4px); }
+
+        /* TOC */
+        .article-toc { position: sticky; top: 108px; }
+        .toc-title { font-family: 'JetBrains Mono', monospace; font-size: .7rem; letter-spacing: .18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 14px; }
+        .toc-list { list-style: none; display: grid; border-left: 1px solid var(--line); }
+        .toc-list a { display: block; padding: 8px 0 8px 16px; margin-left: -1px; border-left: 2px solid transparent; font-size: .88rem; color: var(--text-muted); line-height: 1.35; transition: color .2s, border-color .2s; }
+        .toc-list a:hover { color: var(--text); }
+        .toc-list a.active { color: var(--text); border-left-color: var(--warm-2); font-weight: 600; }
+        .toc-note { font-size: .8rem; color: var(--text-muted); line-height: 1.5; margin-top: 16px; }
+        .toc-cta { margin-top: 22px; padding: 18px; border-radius: var(--r-md); background: var(--ink); color: var(--text-inv); position: relative; overflow: hidden; }
+        .toc-cta::before { content: ""; position: absolute; inset: 0; background: radial-gradient(120% 90% at 100% 0%, rgba(251, 146, 60, .28), transparent 55%); }
+        .toc-cta > * { position: relative; z-index: 1; }
+        .toc-cta p { font-size: .9rem; color: var(--text-inv-soft); line-height: 1.5; margin-bottom: 14px; }
+        .toc-cta a { display: inline-flex; align-items: center; gap: 7px; font-size: .9rem; font-weight: 600; color: var(--warm-3); transition: gap .25s var(--ease); }
+        .toc-cta a:hover { gap: 11px; }
+        .toc-cta a svg { width: 15px; height: 15px; }
+
+        /* =========================================================
+           RELATED PLAYBOOKS
+           ========================================================= */
+        .related { padding-top: clamp(10px, 2vw, 30px); padding-bottom: clamp(40px, 6vw, 72px); }
+        .related-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; margin-bottom: 30px; flex-wrap: wrap; }
+        .related-head .eyebrow { color: var(--warm-1); }
+        .related-head h3 { font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 800; letter-spacing: -0.025em; margin-top: 12px; }
+        .related-head .all { font-size: .9rem; font-weight: 600; color: var(--warm-2); display: inline-flex; align-items: center; gap: 7px; transition: gap .25s var(--ease); }
+        .related-head .all:hover { gap: 11px; }
+        .related-head .all svg { width: 15px; height: 15px; }
+        .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+        .related-card { display: block; background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--r-lg); padding: clamp(22px, 2.4vw, 28px); position: relative; overflow: hidden; transition: transform .5s var(--ease), box-shadow .5s var(--ease), border-color .4s; }
+        .related-card::after { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: linear-gradient(var(--warm-1), var(--warm-2)); transform: scaleY(0); transform-origin: top; transition: transform .5s var(--ease); }
+        .related-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); border-color: transparent; }
+        .related-card:hover::after { transform: scaleY(1); }
+        .related-card .tag { display: inline-flex; font-family: 'JetBrains Mono', monospace; font-size: .64rem; letter-spacing: .12em; text-transform: uppercase; color: var(--warm-2); padding: 5px 10px; border-radius: 999px; border: 1px solid var(--line); margin-bottom: 14px; }
+        .related-card h4 { font-size: 1.16rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.28; margin-bottom: 9px; }
+        .related-card p { color: var(--text-muted); font-size: .94rem; margin-bottom: 16px; }
+        .related-card .go { display: inline-flex; align-items: center; gap: 7px; color: var(--warm-2); font-weight: 600; font-size: .9rem; transition: gap .25s var(--ease); }
+        .related-card .go svg { width: 15px; height: 15px; }
+        .related-card:hover .go { gap: 12px; }
+
+        /* =========================================================
+           CTA BAND (dark)
+           ========================================================= */
+        .cta-band { position: relative; padding-bottom: clamp(60px, 9vw, 120px); }
+        .cta-inner { background: var(--ink); color: var(--text-inv); border-radius: var(--r-xl); padding: clamp(48px, 7vw, 84px) var(--pad); text-align: center; position: relative; overflow: hidden; isolation: isolate; }
+        .cta-inner .aurora { opacity: .5; }
+        .cta-inner .eyebrow { color: var(--warm-1); justify-content: center; display: inline-flex; }
+        .cta-inner h2 { font-size: clamp(2rem, 4.6vw, 3.4rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; max-width: 20ch; margin: 22px auto 0; }
+        .cta-inner h2 .accent-grad { background: linear-gradient(105deg, var(--warm-1) 0%, var(--warm-3) 82%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .cta-inner p { margin: 22px auto 0; color: var(--text-inv-soft); font-size: 1.1rem; max-width: 54ch; line-height: 1.6; }
+        .cta-inner .hero-cta { justify-content: center; margin-top: 36px; }
+
+        /* =========================================================
+           FOOTER
+           ========================================================= */
+        .footer { background: var(--ink); color: var(--text-inv); padding-top: clamp(60px, 8vw, 100px); padding-bottom: 40px; margin-top: -1px; }
+        .footer-top { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 40px; padding-bottom: 56px; border-bottom: 1px solid var(--line-inv); }
+        .footer .brand { color: var(--text-inv); }
+        .footer-about p { margin-top: 20px; color: var(--text-inv-muted); max-width: 38ch; font-size: .98rem; }
+        .footer-col h4 { font-family: 'JetBrains Mono', monospace; font-size: .74rem; letter-spacing: .14em; text-transform: uppercase; color: var(--text-inv-muted); margin-bottom: 18px; }
+        .footer-col ul { list-style: none; display: grid; gap: 12px; }
+        .footer-col a { color: var(--text-inv-soft); font-size: .98rem; transition: color .2s; }
+        .footer-col a:hover { color: var(--warm-2); }
+        .footer-col .contact li { display: flex; gap: 10px; align-items: flex-start; color: var(--text-inv-soft); font-size: .94rem; margin-bottom: 12px; }
+        .footer-col .contact svg { width: 17px; height: 17px; flex: none; margin-top: 3px; color: var(--warm-2); }
+        .footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 30px; flex-wrap: wrap; }
+        .footer-bottom p { color: var(--text-inv-muted); font-size: .9rem; }
+        .footer-social { display: flex; gap: 10px; }
+        .footer-social a { width: 40px; height: 40px; border-radius: 11px; border: 1px solid var(--line-inv); display: grid; place-items: center; color: var(--text-inv-soft); transition: .3s var(--ease); }
+        .footer-social a:hover { background: var(--warm-2); border-color: var(--warm-2); color: #fff; transform: translateY(-2px); }
+        .footer-social svg { width: 18px; height: 18px; }
+
+        .totop { position: fixed; right: 24px; bottom: 100px; z-index: 90; width: 50px; height: 50px; border-radius: 50%; background: var(--ink); color: #fff; display: grid; place-items: center; box-shadow: var(--shadow-md); opacity: 0; visibility: hidden; transform: translateY(12px); transition: .4s var(--ease); }
+        .totop.show { opacity: 1; visibility: visible; transform: none; }
+        .totop:hover { background: var(--warm-2); transform: translateY(-3px); }
+        .totop svg { width: 20px; height: 20px; }
+
+        [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .8s var(--ease-out), transform .8s var(--ease-out); transition-delay: var(--d, 0ms); }
+        [data-reveal].in { opacity: 1; transform: none; }
+
+        /* =========================================================
+           RESPONSIVE
+           ========================================================= */
+        @media (max-width: 980px) {
+            .nav-links, .nav-cta .btn { display: none; }
+            .burger { display: flex; }
+            .footer-top { grid-template-columns: 1fr 1fr; }
+            .fhero-grid { grid-template-columns: 1fr; gap: 36px; }
+            .article-grid { grid-template-columns: 1fr; }
+            .article-toc { display: none; }
+        }
+        @media (max-width: 860px) { .related-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 620px) {
+            body { font-size: 16px; }
+            .footer-top { grid-template-columns: 1fr; gap: 32px; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+            [data-reveal] { opacity: 1; transform: none; }
+            .aurora i { animation: none; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- reading progress -->
+    <div class="progress" id="progress"></div>
+
+    <!-- ============ NAV ============ -->
+    <nav class="nav" id="nav">
+        <div class="wrap">
+            <div class="nav-inner">
+                <a class="brand" href="index.html" aria-label="Offr Group home">
+                    <img class="logo-light" src="assets/images/offr-logo-light.png" alt="" width="61" height="42">
+                    <img class="logo-dark" src="assets/images/offr-logo-dark.png" alt="" width="61" height="42">
+                </a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#services">Services</a>
+                    <a href="hiring-manager-playbook.html">Playbooks</a>
+                    <a href="job-seekers.html">Job Seekers</a>
+                </div>
+                <div class="nav-cta">
+                    <a class="btn btn-dark" href="https://app.thehirepilot.com/f/new-client" target="_blank" rel="noopener">
+                        Book a Strategy Call
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="hiring-manager-playbook.html">Playbooks</a>
+        <a href="job-seekers.html">Job Seekers</a>
+        <a class="btn btn-primary" href="https://app.thehirepilot.com/f/new-client" target="_blank" rel="noopener">Book a Strategy Call</a>
+    </div>
+
+    <!-- ============ ARTICLE HERO ============ -->
+    <header class="hero" id="top">
+        <div class="aurora" aria-hidden="true"><i class="a1"></i><i class="a2"></i><i class="a3"></i></div>
+        <div class="grid-lines" aria-hidden="true"></div>
+        <div class="grain" aria-hidden="true"></div>
+        <div class="hero-spot" id="heroSpot" aria-hidden="true"></div>
+
+        <div class="wrap">
+            <div class="fhero-grid">
+                <div class="fhero-content">
+                    <a class="back-link" href="hiring-manager-playbook.html">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+                        Back to Hiring Manager Playbook
+                    </a>
+                    <span class="eyebrow" data-reveal>Hiring Manager Playbook</span>
+                    <h1 class="article-h1" data-reveal style="--d:80ms">
+                        Senior marketer vs. content generalist: hire the <span class="accent-grad">marketer your business actually needs.</span>
+                    </h1>
+                    <p class="article-sub" data-reveal style="--d:180ms">
+                        Most early-stage founders mis-hire their first marketer. This guide helps you decide whether
+                        you need a content generalist, a true senior marketer, or something in between — using
+                        scorecards, interview prompts, and real-world GTM patterns.
+                    </p>
+                    <div class="meta-chips" data-reveal style="--d:260ms">
+                        <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0l-7.2-7.2A2 2 0 0 1 3 12V4a1 1 0 0 1 1-1h8a2 2 0 0 1 1.4.6l7.2 7.2a2 2 0 0 1 0 2.6Z"/><circle cx="7.5" cy="7.5" r="1.2" fill="currentColor"/></svg> Marketing &amp; GTM</span>
+                        <span class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 12 min read</span>
+                    </div>
+                    <div class="hero-cta" data-reveal style="--d:340ms">
+                        <a class="btn btn-primary" href="#article-body">
+                            Start reading
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+                        </a>
+                        <a class="btn btn-ghost on-dark" href="https://thehirepilot.com" target="_blank" rel="noopener">See how HirePilot runs GTM searches</a>
+                    </div>
+                </div>
+
+                <!-- side card -->
+                <div class="fpanel" data-reveal style="--d:240ms">
+                    <h3 class="fpanel-title">Who this is for</h3>
+                    <ul class="fpanel-list">
+                        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Founders hiring their first or second marketer</li>
+                        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Hiring managers confused by "marketing titles"</li>
+                        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Teams deciding between content and demand gen</li>
+                    </ul>
+                    <h3 class="fpanel-title">What you'll leave with</h3>
+                    <ul class="fpanel-list">
+                        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Clear role definitions by stage</li>
+                        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Scorecards for both roles</li>
+                        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Interview prompts &amp; red flags</li>
+                    </ul>
+                    <a class="btn btn-primary panel-cta" href="https://app.thehirepilot.com/f/new-client" target="_blank" rel="noopener">
+                        Get help with your next hire
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============ ARTICLE BODY ============ -->
+    <section class="article-body" id="article-body">
+        <div class="wrap">
+            <div class="article-grid">
+                <!-- MAIN -->
+                <article class="prose">
+                    <p>Marketing is the single most mis-hired function in SaaS. Not because founders are bad interviewers — but because the role label "marketing" hides wildly different skill sets.</p>
+
+                    <p>One marketer lives in spreadsheets and funnel models. Another lives in content calendars and social carousels. Both call themselves "marketing." Only one will move your revenue curve.</p>
+
+                    <div class="callout">Most early-stage teams don't fail because "marketing didn't work." They fail because they hired the wrong <strong>type</strong> of marketer for their current stage.</div>
+
+                    <p>This playbook gives you a clear, founder-friendly way to decide: <strong>do you need a senior marketer or a content generalist?</strong></p>
+
+                    <h2 id="section-stage">1. Hire based on your stage, not your hope</h2>
+                    <p>The first rule: stop hiring for the company you wish you had, and hire for the company you run <strong>right now</strong>.</p>
+
+                    <h3>Pre-product-market fit (0–$1M ARR)</h3>
+                    <ul>
+                        <li>You need scrappy execution, not big-picture strategy.</li>
+                        <li>Founder is still the primary salesperson and storyteller.</li>
+                        <li>Marketing supports learning: ICP clarity, messaging tests, channel experiments.</li>
+                    </ul>
+                    <p><strong>Best hire:</strong> content-heavy generalist who can ship quickly and amplify your voice.</p>
+
+                    <h3>Post-PMF ($1M–$5M ARR)</h3>
+                    <ul>
+                        <li>You have a working product and paying customers.</li>
+                        <li>The question shifts from "Will anyone buy this?" to "How do we scale this?"</li>
+                        <li>You need to reproduce pipeline with more predictability and less founder heroics.</li>
+                    </ul>
+                    <p><strong>Best hire:</strong> a marketer who understands funnels, pipeline, and basic attribution — often a "demand-oriented" senior IC.</p>
+
+                    <h3>Scaling ($5M–$15M ARR)</h3>
+                    <ul>
+                        <li>You're juggling multiple channels and multiple motions.</li>
+                        <li>You need someone who can architect the GTM engine, not just run campaigns.</li>
+                        <li>Marketing must integrate with sales, CS, product, and finance.</li>
+                    </ul>
+                    <p><strong>Best hire:</strong> a true senior marketer (Head of Marketing, VP, or Director) who has owned revenue-facing metrics before.</p>
+
+                    <div class="callout">The mis-hire happens when you try to get <strong>strategic architecture from a content generalist</strong> or <strong>hands-on execution from a board-facing VP</strong>.</div>
+
+                    <h2 id="section-differences">2. Senior marketer vs. content generalist: clean differences</h2>
+                    <h3>What a senior marketer really owns</h3>
+                    <ul>
+                        <li><strong>ICP &amp; positioning:</strong> who you sell to and why they care.</li>
+                        <li><strong>Funnel design:</strong> how strangers become pipeline and revenue.</li>
+                        <li><strong>Channel strategy:</strong> which levers you pull and in what order.</li>
+                        <li><strong>Attribution:</strong> knowing where opportunities come from.</li>
+                        <li><strong>Budget &amp; tradeoffs:</strong> what gets funded, what gets cut.</li>
+                        <li><strong>Team building:</strong> when to hire specialists and how to manage them.</li>
+                    </ul>
+                    <p>They think in systems, not posts. Give them a target pipeline number and they reverse-engineer the path to get there.</p>
+
+                    <h3>What a content generalist really owns</h3>
+                    <ul>
+                        <li><strong>Copy &amp; storytelling:</strong> emails, landing pages, social posts.</li>
+                        <li><strong>Founder amplification:</strong> turning your voice into consistent content.</li>
+                        <li><strong>Light SEO &amp; distribution:</strong> getting more surface area for your message.</li>
+                        <li><strong>Asset production:</strong> case studies, one-pagers, nurturing content.</li>
+                    </ul>
+                    <p>They don't architect demand. They make your message sharper, more visible, and more frequent — which can absolutely drive revenue, if the rest of the system exists.</p>
+
+                    <h2 id="section-misfires">3. Mis-hire patterns that quietly kill momentum</h2>
+                    <h3>Pattern #1 — Hiring "strategy" before you have signal</h3>
+                    <p>A strategist without data ends up guessing, building frameworks for a funnel that doesn't exist yet.</p>
+                    <h3>Pattern #2 — Hiring a content creator expecting pipeline</h3>
+                    <p>You get more noise — more posts, more emails, more "brand" — but not more qualified conversations. Visibility is not the same as demand.</p>
+                    <h3>Pattern #3 — Big-brand marketer, zero-resource startup</h3>
+                    <p>The person who's used to a 10-person team and a $500K budget struggles when it's just them, a founder, and a spreadsheet.</p>
+                    <h3>Pattern #4 — Framework talker, no shipping history</h3>
+                    <p>They can reference every GTM model under the sun, but can't show you a single campaign they took from "idea → shipped → learned → iterated."</p>
+
+                    <h2 id="section-framework">4. The role-definition clarity framework</h2>
+                    <p>Before you post a JD, answer three questions:</p>
+                    <h3>1. What must marketing solve in the next 90 days?</h3>
+                    <ul>
+                        <li>We need pipeline.</li>
+                        <li>We need activation and onboarding to improve.</li>
+                        <li>We need better messaging and positioning.</li>
+                        <li>We need to prove a channel beyond founder-led outbound.</li>
+                    </ul>
+                    <h3>2. What resources exist today?</h3>
+                    <ul>
+                        <li>Budget (what can you comfortably spend per month?)</li>
+                        <li>Sales capacity (can you even handle more pipeline?)</li>
+                        <li>Data (do you have CRM hygiene and basic tracking?)</li>
+                        <li>Time (how available are you for collaboration?)</li>
+                    </ul>
+                    <h3>3. What kind of output do you need?</h3>
+                    <ul>
+                        <li><strong>Strategic:</strong> someone to design the system.</li>
+                        <li><strong>Executional:</strong> someone to ship assets and campaigns.</li>
+                        <li><strong>Hybrid:</strong> enough strategy to avoid chaos, enough execution to move quickly.</li>
+                    </ul>
+                    <p>If your answers skew tactical, you likely need a content generalist or execution-heavy marketer. If your answers skew systemic (pipeline, attribution, channel mix), you're closer to a senior marketer.</p>
+
+                    <h2 id="section-scorecards">5. Scorecards for both roles</h2>
+                    <h3>Content generalist scorecard</h3>
+                    <p><strong>Must-haves:</strong></p>
+                    <ul>
+                        <li>Strong copy across email, landing pages, and social.</li>
+                        <li>Ability to mimic founder voice without making it robotic.</li>
+                        <li>High content velocity — comfortable shipping multiple assets per week.</li>
+                        <li>Basic understanding of funnels and CTAs.</li>
+                        <li>Empathy for the buyer and their world.</li>
+                    </ul>
+                    <p><strong>Simple working session you can run:</strong></p>
+                    <ul>
+                        <li>Ask them to rewrite one of your recent emails in three different tones.</li>
+                        <li>Have them turn a testimonial into a mini landing page section.</li>
+                        <li>Ask for three LinkedIn posts based on a short Loom from you.</li>
+                    </ul>
+                    <p><strong>Red flags:</strong></p>
+                    <ul>
+                        <li>They talk more about "aesthetics" than outcomes.</li>
+                        <li>No concrete examples of content that influenced pipeline.</li>
+                        <li>They avoid feedback or iteration ("my style is just like this").</li>
+                    </ul>
+
+                    <h3>Senior marketer scorecard</h3>
+                    <p><strong>Must-haves:</strong></p>
+                    <ul>
+                        <li>Can walk you through a full funnel they've owned — top to bottom.</li>
+                        <li>Understands attribution enough to know what's directionally true.</li>
+                        <li>Has cut channels before, and can explain why.</li>
+                        <li>Talks about revenue, not just leads or MQLs.</li>
+                        <li>Has managed conflict between sales and marketing.</li>
+                    </ul>
+                    <p><strong>Working session prompts:</strong></p>
+                    <ul>
+                        <li>"Walk me through a quarter where you missed your target and what changed next."</li>
+                        <li>"Show me a campaign you'd happily run again, as-is."</li>
+                        <li>"If our pipeline dropped 30% next month, what are the first three things you'd check?"</li>
+                    </ul>
+                    <p><strong>Red flags:</strong></p>
+                    <ul>
+                        <li>Everything is "a team effort" with no clear ownership.</li>
+                        <li>They don't know their numbers — or they're vague about impact.</li>
+                        <li>They blame sales for poor conversion without owning their part.</li>
+                    </ul>
+
+                    <h2 id="section-interviews">6. Interview prompts that separate talkers from operators</h2>
+                    <p>Use these questions with either role and listen for specificity, numbers, and ownership:</p>
+                    <ul>
+                        <li>"Tell me about a channel you turned off. Why, and what happened next?"</li>
+                        <li>"When marketing is working, what are the first signs you see?"</li>
+                        <li>"Show me a campaign or piece of work you're proud of and walk me through the outcome."</li>
+                        <li>"What did you learn from your last bad hire or misaligned partner?"</li>
+                        <li>"If I gave you no extra budget, how would you generate more qualified conversations in 60 days?"</li>
+                    </ul>
+                    <div class="callout">Great marketers talk about <strong>tradeoffs, constraints, and learning loops</strong>. Weak marketers talk in slogans.</div>
+
+                    <h2 id="section-30days">7. 30-day action plan after you make the hire</h2>
+                    <h3>If you hire a content generalist</h3>
+                    <ul>
+                        <li>Build a 4–6 week content calendar anchored in your ICP's problems.</li>
+                        <li>Record a 30–45 minute Loom downloading your story, product, and point of view.</li>
+                        <li>Spin that into LinkedIn posts, email sequences, and a few key landing page upgrades.</li>
+                        <li>Measure content performance on:
+                            <ul>
+                                <li>Reply rate and click-through on outbound sequences.</li>
+                                <li>Meeting quality feedback from sales/founders.</li>
+                                <li>Growth in engaged audience, not just impressions.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3>If you hire a senior marketer</h3>
+                    <ul>
+                        <li>Run an ICP and positioning workshop in week one.</li>
+                        <li>Audit your funnel: traffic → sign-ups → opportunities → closed-won.</li>
+                        <li>Define 2–3 channels to prioritize and 2 to pause for now.</li>
+                        <li>Build a simple pipeline model:
+                            <ul>
+                                <li>How many opportunities you need.</li>
+                                <li>From which channels.</li>
+                                <li>At what conversion rates.</li>
+                            </ul>
+                        </li>
+                        <li>Agree on a weekly GTM meeting cadence with sales/founders.</li>
+                    </ul>
+
+                    <h2 id="section-tools">8. Suggested tools &amp; stack by role</h2>
+                    <h3>For a content generalist</h3>
+                    <ul>
+                        <li>Writing &amp; editing: Google Docs, Grammarly, Notion.</li>
+                        <li>Design &amp; visuals: Figma, Canva, basic Loom editing.</li>
+                        <li>Scheduling &amp; distribution: Buffer, Hypefury, or native scheduling.</li>
+                        <li>Light CRM and pipeline visibility: HirePilot or HubSpot starter.</li>
+                    </ul>
+                    <h3>For a senior marketer</h3>
+                    <ul>
+                        <li>CRM &amp; pipeline: HubSpot / Salesforce + HirePilot for recruiting GTM roles.</li>
+                        <li>Attribution &amp; data: basic reporting first, dedicated tools later.</li>
+                        <li>Automation: Zapier / Make to glue systems together.</li>
+                        <li>Experiment tracking: Notion templates or a simple dashboard.</li>
+                    </ul>
+
+                    <h2 id="section-summary">9. Founder TL;DR</h2>
+                    <ul>
+                        <li>If you're early and scrappy: <strong>hire a content generalist</strong> who ships.</li>
+                        <li>If you're proving repeatability: <strong>hire an execution-heavy senior marketer</strong>.</li>
+                        <li>If you're scaling across channels: <strong>hire a strategic leader</strong> who has owned revenue before.</li>
+                    </ul>
+                    <p>When in doubt, bias toward execution — but make sure you know what you're executing against. Strategy without action is hallucination. Action without strategy is churn.</p>
+
+                    <div class="callout">The job isn't "hire marketing." The job is <strong>de-risk your GTM with the right kind of marketer for your stage</strong>.</div>
+
+                    <p>If you'd like help scoping the role, building a scorecard, and running a targeted search, that's exactly what we do at Offr Group.</p>
+
+                    <p class="endlink"><a href="https://app.thehirepilot.com/f/new-client" target="_blank" rel="noopener">Share your next marketing hire with us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+                </article>
+
+                <!-- TOC -->
+                <aside class="article-toc">
+                    <div class="toc-title">On this page</div>
+                    <ul class="toc-list" id="tocList">
+                        <li><a href="#section-stage">1. Hire based on your stage</a></li>
+                        <li><a href="#section-differences">2. Senior vs. generalist</a></li>
+                        <li><a href="#section-misfires">3. Mis-hire patterns</a></li>
+                        <li><a href="#section-framework">4. Role clarity framework</a></li>
+                        <li><a href="#section-scorecards">5. Scorecards</a></li>
+                        <li><a href="#section-interviews">6. Interview prompts</a></li>
+                        <li><a href="#section-30days">7. 30-day plan</a></li>
+                        <li><a href="#section-tools">8. Tools &amp; stack</a></li>
+                        <li><a href="#section-summary">9. Founder TL;DR</a></li>
+                    </ul>
+                    <p class="toc-note">Built for SaaS, tech, and services founders who want less noise and more signal in their hiring.</p>
+                    <div class="toc-cta">
+                        <p>Ready to run this playbook with real candidates?</p>
+                        <a href="https://app.thehirepilot.com/f/new-client" target="_blank" rel="noopener">Share your next role <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ RELATED PLAYBOOKS ============ -->
+    <section class="section related">
+        <div class="wrap">
+            <div class="related-head" data-reveal>
+                <div>
+                    <span class="eyebrow">More playbooks</span>
+                    <h3>Keep reading</h3>
+                </div>
+                <a class="all" href="hiring-manager-playbook.html">All playbooks <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+            <div class="related-grid">
+                <a class="related-card" data-reveal href="playbook-vpofsales.html">
+                    <span class="tag">Playbook</span>
+                    <h4>Hiring your first VP of Sales</h4>
+                    <p>Why most VP hires fail, what great looks like, scorecards, and interview frameworks.</p>
+                    <span class="go">Read playbook <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                </a>
+                <a class="related-card" data-reveal style="--d:90ms" href="playbook-interview-loop.html">
+                    <span class="tag">Playbook</span>
+                    <h4>Designing an interview loop that respects everyone's time</h4>
+                    <p>A repeatable structure that protects calendars and produces better decisions.</p>
+                    <span class="go">Read playbook <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                </a>
+                <a class="related-card" data-reveal style="--d:180ms" href="playbook-operators-chief-of-staff.html">
+                    <span class="tag">Playbook</span>
+                    <h4>Hiring operators &amp; chiefs of staff</h4>
+                    <p>Screen for judgment and execution inside founder chaos — without burnout.</p>
+                    <span class="go">Read playbook <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta-band">
+        <div class="wrap">
+            <div class="cta-inner" data-reveal>
+                <div class="aurora" aria-hidden="true"><i class="a1"></i><i class="a2"></i><i class="a3"></i></div>
+                <div class="grain" aria-hidden="true"></div>
+                <span class="eyebrow">Hiring Manager Playbook</span>
+                <h2>Run this playbook with <span class="accent-grad">real candidates.</span></h2>
+                <p>Scope the role, build the scorecard, and run a targeted search — with a recruiting partner who's done it before.</p>
+                <div class="hero-cta">
+                    <a class="btn btn-primary" href="https://app.thehirepilot.com/f/new-client" target="_blank" rel="noopener">
+                        Share your next role
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                    <a class="btn btn-ghost on-dark" href="hiring-manager-playbook.html">More playbooks</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" id="contact">
+        <div class="wrap">
+            <div class="footer-top">
+                <div class="footer-about">
+                    <a class="brand" href="index.html" aria-label="Offr Group home"><img class="logo-light" src="assets/images/offr-logo-light.png" alt="Offr Group" width="67" height="46"></a>
+                    <p>A nimble recruiting firm for high-velocity teams. We help founders and leaders build lean hiring systems, reach passive talent, and make confident hires — without slowing down the work.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>For you</h4>
+                    <ul>
+                        <li><a href="for-founders.html">For Founders</a></li>
+                        <li><a href="job-seekers.html">For Job Seekers</a></li>
+                        <li><a href="hiring-manager-playbook.html">Hiring Playbooks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>600 Congress Ave, 14th Floor, Austin, TX 78701</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg><a href="tel:+12107421010">+1 (210) 742-1010</a></li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg><a href="mailto:engage@offrgroup.com">engage@offrgroup.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Offr Group. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5v-9h3v9Zm-1.5-10.3a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4ZM19 19h-3v-4.7c0-1.1 0-2.5-1.5-2.5s-1.8 1.2-1.8 2.4V19h-3v-9h2.9v1.2h.04a3.2 3.2 0 0 1 2.9-1.6c3.1 0 3.7 2 3.7 4.7V19Z"/></svg></a>
+                    <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.2 2h3.3l-7.2 8.3L23 22h-6.6l-5.2-6.8L5.3 22H2l7.7-8.8L1.7 2h6.8l4.7 6.2L18.2 2Zm-1.2 18h1.8L7.1 3.9H5.2L17 20Z"/></svg></a>
+                    <a href="mailto:engage@offrgroup.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- back to top -->
+    <button class="totop" id="totop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+    </button>
+
+    <!-- ============ SCRIPTS ============ -->
+    <script>
+        (function () {
+            "use strict";
+            var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+            var reveals = document.querySelectorAll("[data-reveal]");
+            if ("IntersectionObserver" in window && !reduce) {
+                var io = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+                }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+                reveals.forEach(function (el) { io.observe(el); });
+            } else {
+                reveals.forEach(function (el) { el.classList.add("in"); });
+            }
+
+            var nav = document.getElementById("nav");
+            var progress = document.getElementById("progress");
+            var totop = document.getElementById("totop");
+            function onScroll() {
+                var y = window.scrollY || window.pageYOffset;
+                nav.classList.toggle("scrolled", y > 24);
+                totop.classList.toggle("show", y > 700);
+                var h = document.documentElement.scrollHeight - window.innerHeight;
+                progress.style.width = (h > 0 ? (y / h) * 100 : 0) + "%";
+            }
+            window.addEventListener("scroll", onScroll, { passive: true });
+            onScroll();
+            totop.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" }); });
+
+            var burger = document.getElementById("burger");
+            var menu = document.getElementById("mobileMenu");
+            function toggleMenu(force) {
+                var open = typeof force === "boolean" ? force : !document.body.classList.contains("menu-open");
+                document.body.classList.toggle("menu-open", open);
+                burger.setAttribute("aria-expanded", open ? "true" : "false");
+            }
+            burger.addEventListener("click", function () { toggleMenu(); });
+            menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", function () { toggleMenu(false); }); });
+
+            var hero = document.querySelector(".hero");
+            var spot = document.getElementById("heroSpot");
+            if (hero && spot && !reduce && window.matchMedia("(pointer:fine)").matches) {
+                hero.addEventListener("pointermove", function (ev) {
+                    var r = hero.getBoundingClientRect();
+                    spot.style.setProperty("--mx", ((ev.clientX - r.left) / r.width * 100) + "%");
+                    spot.style.setProperty("--my", ((ev.clientY - r.top) / r.height * 100) + "%");
+                });
+            }
+
+            if (!reduce && window.matchMedia("(pointer:fine)").matches) {
+                document.querySelectorAll(".btn-primary, .totop").forEach(function (b) {
+                    b.addEventListener("pointermove", function (ev) {
+                        var r = b.getBoundingClientRect();
+                        b.style.transform = "translate(" + ((ev.clientX - r.left - r.width / 2) * 0.25) + "px," + ((ev.clientY - r.top - r.height / 2) * 0.35) + "px)";
+                    });
+                    b.addEventListener("pointerleave", function () { b.style.transform = ""; });
+                });
+            }
+
+            /* ----- TOC scroll-spy ----- */
+            var tocLinks = [].slice.call(document.querySelectorAll("#tocList a"));
+            var sections = [].slice.call(document.querySelectorAll(".prose h2[id]"));
+            if (tocLinks.length && sections.length && "IntersectionObserver" in window) {
+                var setActive = function (id) {
+                    tocLinks.forEach(function (a) { a.classList.toggle("active", a.getAttribute("href") === "#" + id); });
+                };
+                var spy = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (e) { if (e.isIntersecting) setActive(e.target.id); });
+                }, { rootMargin: "-15% 0px -75% 0px", threshold: 0 });
+                sections.forEach(function (s) { spy.observe(s); });
+            }
+        })();
+    </script>
+
+    <!-- Offr chat widget -->
+    <div id="offr-chat-root"></div>
+    <script
+        src="https://thehirepilot.com/widgets/offr-chat-widget.js?v=1.0.1"
+        data-api-base="https://api.thehirepilot.com"
+        data-calendly-url="https://calendly.com/offrgroup/introduction"
+        defer></script>
+</body>
+
+</html>
